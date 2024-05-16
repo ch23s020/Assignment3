@@ -29,8 +29,8 @@ The Seq2Seq model is designed to perform sequence-to-sequence transliteration ta
     
  The model is implemented using PyTorch and have two variants:-
 **
- 1) Vailla RNN
- 2) RNN with Attention Mechanism**
+ 1) **Vanilla RNN**
+ 2) **RNN with Attention Mechanism****
 
 
 **Model Architecture**
