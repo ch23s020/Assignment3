@@ -2,7 +2,18 @@
 RNN
 **Transliteration on English - Marathi Dataset by Akshnatar.**
 
-Please use google colab notebook to run the code if any issue observed in handling .py file for reproducability of the results.
+Please use google colab notebooks to run the code.
+
+This repoistory contains two file:-
+
+1) RNN implementation (Vanilla)
+2) RNN with Attention Mechanism.
+  
+The file names are kept so to self explainatory.
+
+For Wandb, link and some of the issues are mentioned at the end of this readme file.
+
+The commented part in code is to accomodate all the parts of questions such as running on only one of the best hyperparameter set is kept as it is while the overall search is kept commented out. The code in current format will be executed for generating test accuracies. The commented out portion can be bring in if all the sweep functionality to check.
 
 The dataset in spreadsheet format consists of English and corresponding Marathi words. The data is split into training data, validation data, and test data into different folders and link to it provided in code as follows:-
 
@@ -52,3 +63,7 @@ Training
 The model is trained using cross-entropy loss and the Adam optimizer. The training loop involves feeding batches of data to the model, calculating the loss based on word, and updating the model parameters.
 
 **Wandb Report Link**:- 
+
+https://api.wandb.ai/links/rrjadhao27/17kck0bi
+
+Due to wandb issue faced and update from support site of wand, lots of runs got logged after it come out of wait lock issue hence few plots can be seen multiple times speciall media files.
